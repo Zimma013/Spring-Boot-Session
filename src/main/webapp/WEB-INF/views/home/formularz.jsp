@@ -41,7 +41,7 @@
         <br />
 
         <textarea name="formularz_text" rows="10" cols="80">
-         ...
+            ${tekst}
         </textarea>
 
         <br />

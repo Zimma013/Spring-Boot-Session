@@ -19,6 +19,8 @@
     // wyrażeniu jest dostępna również w tym późniejszym.
     System.out.println( "Test helloworld" );
     java.util.Date date = new java.util.Date();
+    java.lang.String aa = "aa";
+
 %>
 Obecnie mamy <%= date %>
 </body>

@@ -44,11 +44,11 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
  * http://duckranger.com
  */
 @Repository
-public class Model implements SessionAttributeStore, InitializingBean {
+public class ModelApp implements SessionAttributeStore, InitializingBean {
 
     @Inject
     private RequestMappingHandlerAdapter requestMappingHandlerAdapter;
-    private Logger logger = Logger.getLogger(Model.class.getName());
+    private Logger logger = Logger.getLogger(ModelApp.class.getName());
 
     private int keepAliveConversations = 10;
 
