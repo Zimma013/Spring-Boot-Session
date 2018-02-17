@@ -1,0 +1,201 @@
+div.content { 
+
+	width: 960px;
+	margin-top: 200px; 
+	position: relative;
+	float: right;
+	border: 3px solid dimgray; border-radius: 40px 60px 40px 60px; 
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	background: radial-gradient(ellipse farthest-corner at 80% 20%, lavenderblush, lemonchiffon); 
+	cursor: default;
+}
+div.title{
+	position: absolute;
+
+	width: 1240px;
+	height: 194px;
+	border: 3px solid dimgray; border-radius: 40px 60px 40px 10px; 
+	background: radial-gradient(ellipse farthest-corner at 50% 50%, #EEB2F7, lemonchiffon);
+}
+div.title img.agh{
+	margin-left: 85px;
+	 max-height: 160px;
+	 position: relative;
+	float: left;
+}
+div.title img.design{
+	margin-right: 85px;
+	max-height: 170px;
+	position: relative;
+	float: right;
+}
+div.title h1{
+	text-align: center;
+	color: #EB0000; font-family: 'Times New Roman', serif; font-size: 400%;  font-style: italic; font-weight: bold; 
+	text-shadow: 20px 10px 6px white;
+	cursor: default;
+}
+div.menuleft { 
+
+	width: 250px;
+	margin-top: 200px; 
+	position: relative;
+	float: left;
+
+	border: 3px solid dimgray; border-radius: 10px 40px 10px 40px; 
+
+	padding: 2px 2px 2px 2px;
+
+	background: radial-gradient(ellipse farthest-corner at 20% 20%, lavenderblush, lemonchiffon);
+}
+
+div.menuleft dt.first{
+	color: red; 
+	text-shadow: 4px 3px 3px lightslategray;
+	text-align: center;	
+	margin-bottom: 10px;
+	font-size: 150%;	
+}
+div.menuleft dt.second{
+	color: red; 
+	text-shadow: 4px 3px 3px lightslategray;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	
+	font-size: 150%;
+}
+div.menuleft dd{
+	font-weight: bold; font-style: italic;
+	text-align: center;
+	padding: 10px;
+
+	margin-bottom: 10px;
+
+	border: 1px solid dimgray; border-radius: 10px 5px 10px 5px;
+	background: gainsboro;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+div.menuleft dd:hover{
+	font-weight: bold; font-style: italic;
+	text-align: center;
+	border: 3px solid dimgray; border-radius: 10px 5px 10px 5px;
+	background: floralwhite;
+	
+
+}
+div.menuleft dd a:link{
+	display: block;
+	color: maroon;
+	cursor: default;
+	text-decoration: none;
+}
+div.menuleft dd:hover a{
+	color: red;
+	cursor: default;
+	text-decoration: underline;
+}
+
+body {
+	width: 1246px;
+	background: floralwhite; 
+
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+img.eagle{
+
+    width: 60%; height: 60%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+h1 {color: #AD1111;  
+	font-family: comic; 
+	text-shadow: 8px 5px 6px lightslategray;
+	letter-spacing: 8px; 
+ 	text-indent: 10px; }
+h1:hover { color: red;  text-shadow: 16px 10px 6px black;}
+h2 {color: #B03737;  
+	font-family: Arial; 
+	text-shadow: 4px 3px 3px lightslategray;
+	text-indent: 10px;  }
+h2:hover { color: red;  text-shadow: 16px 10px 6px black;}
+h3 {color: #B05151;  
+	font-family: Georgia; 
+	text-shadow: 2px 1px 2px lightslategray; 
+ 	text-indent: 10px; }
+h3:hover { color: red;  text-shadow: 16px 10px 6px black;}
+p{	text-indent: 40px; }
+p:first-letter { color: #8C0D0D; font-family: 'Times New Roman', serif; font-size: 200%;  font-style: italic; font-weight: bold; }
+p.code:first-letter {color: black; font-family: 'Courier New', serif; font-size: 100%; font-style: normal; font-weight: bold;}
+table.tabstyle{
+
+	 border-top: 3px solid #B3ADAD; border-radius: 10px 10px 10px 10px;
+	 border-left: 3px solid #B3ADAD; border-radius: 10px 10px 10px 10px;
+	 border-bottom: 3px solid black; border-radius: 10px 10px 10px 10px;
+	 border-right: 3px solid black; border-radius: 10px 10px 10px 10px;
+}
+table.tabstyle td{
+	 border-bottom: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-right: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-top: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 border-left: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 background: radial-gradient(ellipse farthest-side at 20% 20%, lightgoldenrodyellow, goldenrod);
+	 font-family: Arial; 
+	 text-align: center;
+}
+table.tabstyle td.liketh{
+	 border-bottom: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-right: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-top: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 border-left: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 background: radial-gradient(ellipse farthest-side at 20% 20%, gold, goldenrod);
+	 font-style: italic;
+	 font-family: Georgia; 
+}
+table.tabstyle td.other{
+	 border-bottom: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-right: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-top: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 border-left: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 background: radial-gradient(ellipse farthest-side at 50% 20%, lightcoral, goldenrod);
+}
+table.tabstyle td.empty{background: none; border: hidden;}
+table.tabstyle th{
+	 border-bottom: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-right: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-top: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 border-left: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 background: radial-gradient(ellipse farthest-side at 20% 20%, gold, goldenrod);
+	 font-family: Georgia; 
+	 text-transform: uppercase; 
+	 letter-spacing: 4px
+}
+table.tabstyle th.foot{
+	 border-bottom: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-right: 2px solid #B3ADAD; border-radius: 5px 5px 5px 5px;
+	 border-top: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 border-left: 2px solid black; border-radius: 5px 5px 5px 5px;
+	 background: radial-gradient(ellipse farthest-side at 20% 20%, gold, goldenrod);
+	 text-transform: none; 
+
+}
+table.tabstyle th.empty{background: none; border: hidden;}
+ol li{list-style-type: upper-roman;}
+ol li li{list-style-type: lower-roman;}
+ol li li li{list-style-type: lower-greek;}
+img.imgleft{
+	display: block;
+	margin-left: 1%;
+	margin-right: auto;
+}
+img.imgright{
+	display: block;
+	margin-left: auto;
+	margin-right: 1%;
+}
