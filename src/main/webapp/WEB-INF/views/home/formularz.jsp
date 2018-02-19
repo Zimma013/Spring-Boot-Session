@@ -17,10 +17,23 @@
     <p><img src="http://cdn.crunchify.com/wp-content/uploads/2013/06/Java-Design-Patterns.png" alt="design" class="design" /></p>
     <h1>Strona</h1>
 </div>
+
 <div  class="menuleft">
     <dl>
-        <dt class="second">Odnośniki do ...</dt>
+        <dt class="second">zapisane konwersacje</dt>
+        <form method="post" action=${redirectCRUD}>
+        ${list_var}
+        <br/>
+            <input type="radio" name="submitType" value="1" checked = "checked">Zmień nazwę<br/>
 
+
+            <input type="radio" name="submitType" value="2">Dezaktywuj<br/>
+
+            <input type="radio" name="submitType" value="3">Aktywuj<br/>
+
+            <input type="submit" value="Wykonaj">
+
+        </form>
     </dl>
     <dl>
         <dt class="second">Nawigacja strony</dt>
@@ -35,18 +48,24 @@
 
 <div class="content">
 
-    <form method="post" action="login">
+
+
+    <form method="post" action=${t}>
+
 
         Uzupełnij formularz:
         <br />
 
-        <textarea name="formularz_text" rows="10" cols="80">
-            ${tekst}
+        <textarea name="form_text" rows="10" cols="80">
+            ${form_text_var}
         </textarea>
+
 
         <br />
         <input type="submit" value="Wyślij">
     </form>
+
+
 
 
 

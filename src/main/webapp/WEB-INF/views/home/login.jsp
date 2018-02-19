@@ -8,25 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Logowanie</title>
     <link rel="stylesheet" href="styles/css/podstawowy.css" type="text/css" title="Podstawowy" />
 </head>
 <body>
 <div class="title">
     <p><img src="http://www.robot.agh.edu.pl/img/logos/agh.png" alt="agh" class="agh" /></p>
-    <p><img src="http://cdn.crunchify.com/wp-content/uploads/2013/06/Java-Design-Patterns.png" alt="design" class="design" /></p>
-    <h1>Strona</h1>
+    <p><img src="https://orig00.deviantart.net/9f81/f/2009/220/1/e/giant_anteater_by_kaileo.png" alt="design" class="design" /></p>
+    <h1>Logowanie</h1>
 </div>
 <div  class="menuleft">
     <dl>
-        <dt class="second">Odnośniki do ...</dt>
-        <dd><a href="">Przeskocz do ...</a></dd>
+        <dt class="second"> logowanie </dt>
+
 
     </dl>
     <dl>
         <dt class="second">Nawigacja strony</dt>
-        <dd><a href="">Nawiguj do ...</a></dd>
-        <dd><a href="">Nawiguj do ...</a></dd>
+
 
 
     </dl>
@@ -39,13 +38,34 @@
 
 <div class="content">
 
-    <form method="post" action="formularz">
-        Podaj swój login: <br />
-        <input type="text" name="name" value=${tmp2} /><br />
-        Podaj swoje hasło <br />
-        <input type="text" name="password" value=${tmp} /><br />
-        <input type="submit" value="zaloguj">
-    </form>
+
+
+        <form method="post" action="/loginValidate">
+
+            <h2> ${login_msg} </h2>
+
+            Podaj swój login: <br />
+
+            <input type="text" name="login" /><br />
+
+            Podaj swoje hasło <br />
+
+            <input type="password" name="password" /><br />
+
+            <input type="submit" value="zaloguj">
+        </form>
+        <br />
+        <br />
+        <br />
+        <form method="post" action="register">
+            <input type="submit" value="załóż konto">
+        </form>
+
+
+
+
+
+
 
 </div>
 
