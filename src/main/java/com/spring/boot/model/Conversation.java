@@ -15,11 +15,11 @@ public class Conversation implements SessionStoreAttribute {
     /*attName, attValue*/
     private HashMap<String, String> dataMap;
 
-    public Conversation() {
+    public Conversation(String name) {
         this.cID = UUID.randomUUID().toString();
         this.dataMap = new HashMap<>();
         this.isActive = true;
-        this.name ="Baba Jaga";
+        this.name ="Konwersacja Nr " + name;
     }
 
     public String getcID() {

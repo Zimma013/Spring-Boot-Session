@@ -44,19 +44,17 @@
 
             <h2> ${login_msg} </h2>
 
-            Podaj swój login: <br />
+            <h3>Podaj swój login:</h3>
 
             <input type="text" name="login" /><br />
 
-            Podaj swoje hasło <br />
+            <h3>Podaj swoje hasło</h3>
 
             <input type="password" name="password" /><br />
 
             <input type="submit" value="zaloguj">
         </form>
-        <br />
-        <br />
-        <br />
+
         <form method="post" action="register">
             <input type="submit" value="załóż konto">
         </form>

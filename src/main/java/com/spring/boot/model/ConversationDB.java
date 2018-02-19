@@ -48,11 +48,11 @@ public class ConversationDB {
         String out = "";
         if(!userCIDsMap.get(token).isEmpty()) {
             for (Conversation conv : this.userCIDsMap.get(token)) {
-                out += "<input type = \"radio\"  name=\"convName\" " +
+                out += "<p class=\"conv_choice\"><input type = \"radio\"  name=\"convName\" " +
                         "value= \"" + conv.getcID() + "\"";
                     if(conv.isActive())
                         out += " checked=\"checked\"";
-                out += ">"+conv.getName()+ "<br />";
+                out += ">"+conv.getName()+ "</p><br />";
             }
             //System.out.println("test " + out);
         }
@@ -74,11 +74,12 @@ public class ConversationDB {
         if(this.userCIDsMap.containsKey(token)){
             Conversation conv = findActiveConversation(token);
             conv.setActive(false);
-            this.userCIDsMap.get(token).add(new Conversation());
+            this.userCIDsMap.get(token)
+                    .add(new Conversation(String.valueOf(this.userCIDsMap.get(token).size()+1)));
 
         }else{
             ArrayList<Conversation> newList = new ArrayList<>();
-            newList.add(new Conversation());
+            newList.add(new Conversation("1"));
             this.userCIDsMap.put(token,newList);
         }
     }

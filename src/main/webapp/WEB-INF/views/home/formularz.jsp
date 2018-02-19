@@ -20,16 +20,18 @@
 
 <div  class="menuleft">
     <dl>
-        <dt class="second">zapisane konwersacje</dt>
+        <dt class="second">Zapisane konwersacje</dt>
         <form method="post" action=${redirectCRUD}>
         ${list_var}
-        <br/>
-            <input type="radio" name="submitType" value="1" checked = "checked">Zmień nazwę<br/>
-
-
-            <input type="radio" name="submitType" value="2">Dezaktywuj<br/>
-
-            <input type="radio" name="submitType" value="3">Aktywuj<br/>
+            <p class="radio_action">
+                <input type="radio" name="submitType" value="1" checked = "checked">Zmień nazwę<br/>
+            </p>
+            <p class="radio_action">
+            <input class="action" type="radio" name="submitType" value="2">Dezaktywuj<br/>
+            </p>
+            <p class="radio_action">
+            <input class="action" type="radio" name="submitType" value="3">Aktywuj<br/>
+            </p>
 
             <input type="submit" value="Wykonaj">
 
@@ -39,7 +41,6 @@
         <dt class="second">Nawigacja strony</dt>
 
     </dl>
-
 </div>
 
 
@@ -53,7 +54,7 @@
     <form method="post" action=${t}>
 
 
-        Uzupełnij formularz:
+        <h2>Uzupełnij formularz:</h2>
         <br />
 
         <textarea name="form_text" rows="10" cols="80">

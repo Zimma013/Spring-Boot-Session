@@ -159,7 +159,7 @@ public class ControllerApp {
 
         System.out.println("token FORM convCRUD : "+request.getParameter("t"));
         String token = request.getParameter("t");
-        redirected.addAttribute(request.getParameter("t"));
+        redirected.addAttribute("t",request.getParameter("t"));
 
         if(type.equals("1")) {
             return "/formNameChange";
@@ -173,13 +173,24 @@ public class ControllerApp {
 
             return "redirect:/formularz";
         } else{
-            System.out.println("VALUE FORM PARAMETER CONVNAME : "+request.getParameter("convName"));
-            //System.out.println("cID From Map : "+this.conversationDB.findActiveConversation(token).getcID());
+            System.out.println("CID FORM PARAMETER CONVNAME : "+request.getParameter("convName"));
+
 
             Conversation returnedConv = this.conversationDB.findConvByCID(token, request.getParameter("convName"));
+            System.out.println("CID FORM PARAMETER RETURNED : "+returnedConv.getcID());
+
+            System.out.println("CID FORM ACTIVE : "+this.conversationDB.findActiveConversation(request.getParameter("t")).getcID());
+
+            System.out.println("IF OLD IS ACTIVE : "+this.conversationDB.findActiveConversation(request.getParameter("t")).isActive());
+
 
             this.conversationDB.findActiveConversation(request.getParameter("t")).setActive(false);
+
+
             returnedConv.setActive(true);
+
+            System.out.println("IF NEW IS ACTIVE : "+this.conversationDB.findActiveConversation(request.getParameter("t")).isActive());
+
             //this.conversationDB.findActiveConversation(request.getParameter("t")).i
             return "redirect:/formularz";
         }
