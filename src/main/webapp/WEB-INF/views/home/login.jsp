@@ -14,19 +14,17 @@
 <body>
 <div class="title">
     <p><img src="http://www.robot.agh.edu.pl/img/logos/agh.png" alt="agh" class="agh" /></p>
-    <p><img src="https://orig00.deviantart.net/9f81/f/2009/220/1/e/giant_anteater_by_kaileo.png" alt="design" class="design" /></p>
+    <p><img src="http://cdn.crunchify.com/wp-content/uploads/2013/06/Java-Design-Patterns.png" alt="design" class="design" /></p>
     <h1>Logowanie</h1>
 </div>
 <div  class="menuleft">
     <dl>
-        <dt class="second"> logowanie </dt>
+        <dt class="second"> Logowanie </dt>
 
 
     </dl>
     <dl>
         <dt class="second">Nawigacja strony</dt>
-
-
 
     </dl>
 
@@ -58,12 +56,6 @@
         <form method="post" action="register">
             <input type="submit" value="załóż konto">
         </form>
-
-
-
-
-
-
 
 </div>
 
